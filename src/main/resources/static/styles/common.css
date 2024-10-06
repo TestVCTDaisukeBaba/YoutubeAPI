@@ -1,0 +1,99 @@
+/* 初めに以下のサイトは見てください */
+/* https://webliker.info/css-selector-cheat-sheet/ */
+
+/**************************/
+/* 共通部品内(common.html) */
+/**************************/
+
+/* 共通ヘッダー内の画像 */
+.header__image img{
+  width: 960px;
+  object-fit: cover;
+  border: solid;
+  border-color: #696969;
+  border-radius: 8px;
+}
+
+.header__navbar{
+  width: 960px;
+  height: 50px;
+  display:flex;
+  background-color: hsl(30, 33%, 25%);
+}
+
+.header__navbar .brown-link{
+	display:inline-block; 
+    height: 100%;
+	background:#C69E6E; 
+	border-radius:8px; 
+	width:240px;
+	text-align:center; 
+	color: white;
+}
+
+.header__navbar .brown-link b{
+
+   vertical-align: middle;
+}
+
+.header__navbar .deep-brown-link{
+	display:inline-block; 
+    height: 100%;
+	background:#57462B; 
+	border-radius:8px; 
+	text-align:center; 
+	 vertical-align: middle;
+	width:240px;
+	color: white;
+}
+
+/**********/
+/* 共通構成*/
+/**********/
+
+/* 背景色等 */
+body{
+	/*　background-color: hsl(30, 33%, 25%); */
+}
+
+/* コンテンツの大枠 */
+.global-container{
+  height:100vh;
+  width: 100%;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #F3ECD8;
+  border: solid;
+  border-color: #696969;
+  border-radius: 8px;
+}
+
+/**************************/
+/* サンプル画面(sample.html) */
+/**************************/
+#sample .video-renderer {
+	display:flex;
+}
+
+#sample .list{
+  list-style:none;
+  padding:10px 10px;
+}
+
+#sample .video-renderer .video-thumbnail{
+  height:202px;
+  width: 360px;
+  padding:0px 10px;
+}
+
+#sample .video-renderer .video-thumbnail img{
+  height:100%;
+  width: 360px;
+  object-fit: cover;
+}
+
+#sample .video-renderer .video-description{
+  padding:0px 10px;
+  font-size: x-large;
+}

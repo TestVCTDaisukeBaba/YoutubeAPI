@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en-US">
+
+<body>
+	<!-- 共通共通ヘッダー -->
+	<div th:fragment="header">
+		<div class="header__top">
+			<!-- 右上メニュー（連絡先等）を配置 -->
+			<div class="header__aboutus">
+			</div>
+			<!-- イメージ画像を配置 -->
+			<div class="header__image">
+				<img th:src="@{/images/youtube-g2dcc5636a_960.jpg}">
+			</div>
+		</div>
+		<div class="headre__bottom">
+		</div>
+		<!-- ナビゲーションバーを配置 -->
+		<div class="header__navbar">
+			<a href="/sample">
+				<div class="brown-link">
+					<b>
+						SAMPLE
+					</b>
+				</div>
+			</a>
+			<a href="/trend">
+				<div class="deep-brown-link">
+					<b>
+						TREND
+					</b>
+				</div>
+			</a>
+			<a href="/emotion">
+				<div class="brown-link">
+					<b>
+						EMOTION
+					</b>
+				</div>
+			</a>
+			<a href="/captions">
+				<div class="deep-brown-link">
+					<b>
+						CAPTIONS
+					</b>
+				</div>
+			</a>
+		</div>
+	</div>
+
+
+</body>
